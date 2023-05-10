@@ -5,10 +5,9 @@
 
 
 ?>
-<h1>Lindsey Test</h1>
     <section class="uspSection <?php if ($hasCustomClass) { echo $customClass; } ?>">
         <div class="uspSection_outer">
-            <h2>Join the flock</h2>
+            <h2>Join the Flock</h2>
 
             <div class="uspContainer">
                 <div class="uspContainerInner"
@@ -19,36 +18,36 @@
                     <div class="uspItem">
                         <div class="uspItemInner">
                             <div class="icon imageContainer">
-                                <img src="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/wp-content/themes/Pigeon/pigeonImages/freeIcon@2x.png'; ?>" />
+                                <img src="<?php echo get_stylesheet_directory_uri() .  "/pigeonImages/freeIcon@2x.png"; ?>" />
                             </div>
 
                             <h5>Sign up free</h5>
 
-                            <p>Discover new talents and passions with no commitment.</p>
+                            <p>Create your unique profile today in a matter of minutes.</p>
                         </div>
                     </div>
 
                     <div class="uspItem">
                         <div class="uspItemInner">
                             <div class="icon imageContainer">
-                                <img src="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/wp-content/themes/Pigeon/pigeonImages/giftIcon@2x.png'; ?>" />
+                                <img src="<?php echo get_stylesheet_directory_uri() .  "/pigeonImages/giftIcon@2x.png"; ?>" />
                             </div>
 
-                            <h5>Your first chat is on us</h5>
+                            <h5>Paid video sessions</h5>
 
-                            <p>Get to know how it works. Your first 10-minute chat is completely free.</p>
+                            <p>Video meet with your customers from wherever you are, whenever you want.</p>
                         </div>
                     </div>
 
                     <div class="uspItem">
                         <div class="uspItemInner">
                             <div class="icon imageContainer">
-                                <img src="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/wp-content/themes/Pigeon/pigeonImages/moneyBagIcon@2x.png'; ?>" />
+                                <img src="<?php echo get_stylesheet_directory_uri() .  "/pigeonImages/moneyBagIcon@2x.png"; ?>" />
                             </div>
 
-                            <h5>Earn up to £60 per hour</h5>
+                            <h5>Hassle-free payments</h5>
 
-                            <p>Find financial flexibility in your own home and your own time.</p>
+                            <p>Get paid for your time automatically within 3 days.</p>
                         </div>
                     </div>                
                 </div>
@@ -62,7 +61,7 @@
 
             <div class="ctaButton buttonGreen">
                 <div class="ctaButton_inner">
-                    <a href="https://app.pigeon.me/accounts/registration/">Sign Up Free</a>
+                    <a href="https://app.pigeon.me/accounts/registration/">Sign Up For Free</a>
                 </div>
             </div>
         </div>

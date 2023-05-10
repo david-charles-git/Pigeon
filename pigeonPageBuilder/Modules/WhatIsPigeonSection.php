@@ -1,14 +1,23 @@
 <?php
+    //module default variables
     $hasCustomClass = get_sub_field("wipSection_customClass_include");
     $customClass = get_sub_field("wipSection_customClass");
+    
+    //content variables
     $header = get_sub_field("wipSection_header");
     $copy = get_sub_field("wipSection_copy");
     $hasReadMore = get_sub_field("wipSection_hasReadMore");
     $cta_copy = get_sub_field("wipSection_cta_copy");
     $cta_href = get_sub_field("wipSection_cta_href");
+
+    //video variables
     $video_thumbnail = get_sub_field("wipSection_video_thumbnail");
     $video_overlay_copy = get_sub_field("wipSection_video_overlayCopy");
     $video = get_sub_field("wipSection_video");
+
+    //usp section variables
+    $hasUspCarousel = get_sub_field("wipSection_hasUSPCarousel");
+    $uspItemCount = count(get_sub_field("wipSection_uspRepeater"));
 
 
 ?>
@@ -74,6 +83,50 @@
                             <video class='video' onclick="do_playPauseVideo(this)">
                                 <source src='<?php echo $video; ?>'>
                             </video>
+                        </div>
+                    </div>
+<?php
+                }
+
+                if ($hasUspCarousel) {
+                    $uspSectionTitle = get_sub_field("wipSection_uspTitle");
+                    $uspCarouselInnerStyle = "width : calc(100px * " . $uspItemCount . "); grid-template-columns: repeat(" . $uspItemCount . ", 1fr);"; 
+?>
+                    <div class="uspContainer">
+                        <div class="inner">
+                            <h2><?php echo $uspSectionTitle; ?></h2>
+<?php
+                            if (have_rows("wipSection_uspRepeater")) {
+?>
+                                <div class="carousel">
+                                    <div class="carouselOuter">
+                                        <div class="carouselInner" style="<?php echo $uspCarouselInnerStyle; ?>">
+<?php
+                                            while (have_rows("wipSection_uspRepeater")) {
+                                                the_row();
+
+                                                $uspIcon = get_sub_field("icon");
+                                                $uspTitle = get_sub_field("title");
+                                                $uspLink = get_sub_field("link");
+?>
+                                                <div class="carouselItem">
+                                                    <a href="<?php echo $uspLink; ?>" class="inner" target="_blank">
+                                                        <div class="iconContianer">
+                                                            <img src="<?php echo $uspIcon; ?>" />
+                                                        </div>
+
+                                                        <p><?php echo $uspTitle; ?></p>
+                                                    </a>
+                                                </div>
+<?php
+                                            }
+?>
+                                        </div>
+                                    </div>
+                                </div>
+<?php
+                            }
+?>
                         </div>
                     </div>
 <?php
