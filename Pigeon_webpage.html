@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="./JS/master_JS.js"></script>
+        <link rel="stylesheet" href="./CSS/master_CSS.css" />
+    </head>
+
+    <body>
+        <header>
+            <section id="landingPageBanner_parent">
+                <div class="landingPageBanner_container">
+                    <div class="landingPageBanner_images">
+                        <div class="landingPageBanner_backgroundMedia bgImage_width100" style="background-image: url(./Images/Pigeon_test_landingPageBannerImage.png);"></div>
+                        <div class="landingPageBanner_logo_large bgImage_width100" style="background-image: url(./Images/pigeon_logo.png);"></div>
+                        <div class="landingPageBanner_logo_small bgImage_width100" style="background-image: url(./Images/logo-pink-tm.png);"></div>
+                        <h1 class="clr_coral">It's your time</h1>
+                    </div>
+
+                    <div class="landingPageBanner_quickScrollButton bgImage_height100" onclick="do_scrollWindowToStartOfPage()" style="background-image: url(./Images/Arrow_coral.png);"></div>
+                </div>
+            </section>
+
+            <section id="navigation_parent" class="navigation_parent carousel_parent">
+                <div class="navigation_container carousel_outer">
+                    <nav class="naviation carousel_inner">
+                        <div class="navigation_left carousel_item">
+                            <div class="tab_item active">
+                                <a class="p_large" href="#">About</a>
+                            </div>
+
+                            <div class="tab_item">
+                                <a class="p_large" href="#">How to</a>
+                            </div>
+
+                            <div class="tab_item">
+                                <a class="p_large" href="#">Share a skill</a>
+                            </div>
+                        </div>
+
+                        <div class="navigation_logo bgImage_width100" style="background-image: url(./Images/logo-pink-tm_small.png);">
+                            <a class="p_large" href="#"></a>
+                        </div>
+
+                        <div class="navigation_right carousel_item">
+                            <div class="tab_item">
+                                <a class="p_large" href="#">Learn a skill</a>
+                            </div>
+
+                            <div class="tab_item">
+                                <a class="p_large" href="#">Contact us</a>
+                            </div>
+                            
+                            <div>
+                                <p class="btn_black">
+                                    <span></span>
+                                    <a href="#">Register interest</a>
+                                </p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="scrolling_content_static_phone_parent">
+                <div class="scrolling_content_static_phone_container">
+                    <div class="scrolling_content_static_phone_content">
+
+                    </div>
+
+                    <div class="scrolling_content_static_phone_phone">
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="fullBanner_textblock_parent">
+                <div class="fullBanner_textBlock_container">
+                    <div class="fullBanner_textBlock_image bgImage_cover" style="background-image: url(./Images/Pigeon_test_landingPageBannerImage.png);"></div>
+                    <div class="overlay bclr_black" style="opacity:0.3;"></div>
+
+                    <div class="fullBanner_textBlock_content sw_90">
+                        <h2 class="clr_white">Purpose over Profit</h2>
+                        <p class="clr_white">Everybody should have access to learn and experience. Pigeon is connecting the disconnected. Our Purpose over profit fund contributes 5% of profits to a fund to support everybody realising their time to share or enhance their skills and knowledge.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form_image_parent">
+                <div class="form_image_container">
+                    <div class="form_image_left_bottom">
+                        <div class="form_image_image bgImage_cover"></div>
+                    </div>
+
+                    <div class="form_image_right_top sw_90">
+                        <div class="form_image_formContainer">
+                            <h2 class="fnt_bold">Get in touch</h2>
+                            <p>Got a question? Fancy a chat? Pop us a message below and a member of the rather lovely Pigeon Community Team will be happy to help</p>
+                            <form class="form_parent">
+                                <div class="form_body">
+                                    <div class="input_item">
+                                        <select class="select_input validate_input" type="select">
+                                            <option value="default" style="display:none;">Options</option>
+                                            <option value="option_1">Option One</option>
+                                            <option value="option_2">Option Two</option>
+                                            <option value="option_3">Option Three</option>
+                                            <option value="option_4">Option Four</option>
+                                        </select>
+
+                                        <p class="select_element" onclick="show_selectInputOptions(this)">Area of enquiry</p>
+
+                                        <ul class="select_options options_container">
+                                            <li value="option_1" class="option" onclick="update_selectInputValue(this)">Option One</li>
+                                            <li value="option_2" class="option" onclick="update_selectInputValue(this)">Option Two</li>
+                                            <li value="option_3" class="option" onclick="update_selectInputValue(this)">Option Three</li>
+                                            <li value="option_4" class="option" onclick="update_selectInputValue(this)">Option Four</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="input_item">
+                                        <input class="text_input validate_input" type="text" placeholder="Name">
+                                    </div>
+
+                                    <div class="input_item">
+                                        <input class="text_input validate_input" type="email" placeholder="Email address">
+                                    </div>
+
+                                    <div class="input_item">
+                                        <input class="text_input validate_input" type="tel" placeholder="Phone number">
+                                    </div>
+
+                                    <div class="input_item">
+                                        <textarea class="textArea_input" type="textarea" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form_submit">
+                                    <p class="btn_black">
+                                        <span></span>
+                                        <a onclick="">Send</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section id="footer_parent" class="footer_parent bclr_black">
+                <div class="footer_container sw_90">
+                    <div class="footer_left_bottom">
+                        <p class="clr_beige fnt_bold p_xSmall">© Pigeon 2022</p>
+                    </div>
+
+                    <div class="footer_right_top">
+                        <div class="bgImage_contain" style="background-image: url(./Images/instagram_icon_grey.svg);">
+                            <a href="#"></a>
+                        </div>
+
+                        <div class="bgImage_contain" style="background-image: url(./Images/facebook_icon_grey.svg);">
+                            <a href="#"></a>
+                        </div>
+
+                        <div class="bgImage_contain" style="background-image: url(./Images/twitter_icon_grey.svg);">
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

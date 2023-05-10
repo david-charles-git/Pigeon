@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="./JS/master_JS.js"></script>
+        <link rel="stylesheet" href="./CSS/master_CSS.css" />
+    </head>
+    <body>
+        <header>
+
+        </header>
+
+        <main>
+            <section class="styleguide_intro_parent">
+                <div class="styleguide_intro_container sw_90">
+                    <div class="bclr_lightCoral"></div>
+                    <h1 class="fnt_light">Pigeon UI Styleguide</h1>
+                </div>
+            </section>
+
+            <section class="spacer_parent" style="height: 50px;"></section>
+
+            <section class="styleguide_colors_parent">
+                <div class="styleguide_colors_container sw_90">
+                    <h3>Color</h3>
+                    <span class="fnt_bold fnt_caps">Primary</span>
+                    <div>
+                        <div class="bclr_coral"></div>
+                        <div>
+                            <p>Coral</p>
+                            <span class="fnt_bold fnt_caps">#fd7273</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="bclr_lightCoral"></div>
+                        <div>
+                            <p>Light coral</p>
+                            <span class="fnt_bold fnt_caps">#fed3c0</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="bclr_beige"></div>
+                        <div>
+                            <p>Beige</p>
+                            <span class="fnt_bold fnt_caps">#fff8f4</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="bclr_blue"></div>
+                        <div>
+                            <p>Blue</p>
+                            <span class="fnt_bold fnt_caps">#388dca</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="bclr_black"></div>
+                        <div>
+                            <p>Black</p>
+                            <span class="fnt_bold fnt_caps">#000000</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="bclr_grey"></div>
+                        <div>
+                            <p>Grey</p>
+                            <span class="fnt_bold fnt_caps">#f7f7f7</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spacer_parent" style="height: 50px;"></section>
+
+            <section class="styleguide_typography_parent">
+                <div class="styleguide_typography_container sw_90">
+                    <h3>Typography</h3>
+                    <div>
+                        <div>
+                            <p class="fnt_bold fnt_caps">Font styles</p>
+                            <h1>AaBbCc</h1>
+                            <p class="fnt_light">Lato</p>
+                            <p class="fnt_light fnt_xSmall">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789<br>~%!@#$%^&*-_=+ []{}()|\/<>‘’”,.;:?</p>
+                        </div>
+
+                        <div>
+                            <p class="fnt_bold fnt_caps">Font weights</p>
+                            <p class="fnt_light">Light</p>
+                            <p>Regular</p>
+                            <p class="fnt_bold">Bold</p>
+                        </div>
+
+                        <div>
+                            <p class="fnt_bold fnt_caps">Headings - Desktop</p>
+                            <div><span class="fnt_caps clr_darkGrey">heading 1</span><h1 class="fnt_bold">Lato Bold 60</h1></div>
+                            <div><span class="fnt_caps clr_darkGrey">heading 2</span><h2 class="fnt_bold">Lato Bold 55</h2></div>
+                            <div><span class="fnt_caps clr_darkGrey">heading 3</span><h3 class="fnt_bold">Lato Bold 40</h3></div>
+                            <div><span class="fnt_caps clr_darkGrey">heading 4</span><h4>Lato Regular 22</h4></div>
+                            <div><span class="fnt_caps clr_darkGrey">heading 5</span><h5 class="fnt_bold">Lato Bold 22</h5></div>
+                            <div><span class="fnt_caps clr_darkGrey">heading 6</span><h4>Lato Regular 18</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spacer_parent" style="height: 50px;"></section>
+
+            <section class="styleguide_controls_parent">
+                <div class="styleguide_controls_container sw_90">
+                    <h3>Controls</h3>
+
+                    <p class="fnt_caps fnt_bold">Buttons</p>
+                    <div>
+                        <p class="btn_black">
+                            <span></span>
+                            <a href="#">Button</a>
+                        </p>
+                    </div>
+
+                    <div style="height: 50px"></div>
+
+                    <p class="fnt_caps fnt_bold">Tabs</p>
+                    <div>
+                        <div class="tab_container_parent carousel_parent">
+                            <div class="tab_container_outer carousel_outer">
+                                <div class="tab_container_inner carousel_inner">
+                                    <div class="tab_item active carousel_item" onclick="do_switchActiveTab(this)">
+                                        <a href="#">tab One</a>
+                                    </div>
+                                    <div class="tab_item carousel_item" onclick="do_switchActiveTab(this)">
+                                        <a href="#">tab Two</a>
+                                    </div>
+                                    <div class="tab_item carousel_item" onclick="do_switchActiveTab(this)">
+                                        <a href="#">tab Three</a>
+                                    </div>
+                                    <div class="tab_item carousel_item" onclick="do_switchActiveTab(this)">
+                                        <p>tab Four</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="height: 50px"></div>
+
+                    <p class="fnt_caps fnt_bold">Inputs</p>
+                    <div>
+                        <div class="input_item">
+                            <input class="text_input validate_input" type="text" placeholder="Full Name" />
+                        </div>
+                    </div>
+
+                    <div style="height: 50px"></div>
+
+                    <div>
+                        <div class="input_item">
+                            <select class="select_input validate_input" type="select">
+                                <option value="default" style="display:none;">Options</option>
+                                <option value="option_1">Option One</option>
+                                <option value="option_2">Option Two</option>
+                                <option value="option_3">Option Three</option>
+                                <option value="option_4">Option Four</option>
+                            </select>
+                            <p class="select_element" onclick="show_selectInputOptions(this)">Select</p>
+                            <ul class="select_options options_container">
+                                <li value="option_1" class="option" onclick="update_selectInputValue(this)">Option One</li>
+                                <li value="option_2" class="option" onclick="update_selectInputValue(this)">Option Two</li>
+                                <li value="option_3" class="option" onclick="update_selectInputValue(this)">Option Three</li>
+                                <li value="option_4" class="option" onclick="update_selectInputValue(this)">Option Four</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spacer_parent" style="height: 50px;"></section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
