@@ -554,20 +554,25 @@ $learner_viewAllLink = get_sub_field("learner_viewAllLink");
                                         <div class="videoItem">
                                             <div class='video_container' playPause='play'>
                                                 <div class='video_thumbnail' style='background-image: url(<?php echo $sharer_carouselVideoThumbnail; ?>);'></div>
-
-                                                <div class='video_overlay'>
-                                                    <div class="ctaButton" onclick="do_playPauseVideo(this)">
-                                                        <div class="ctaButton_inner">
-                                                            <a><span></span> watch video</a>
+                                                <?php
+                                                if ($sharer_carouselVideo) {
+                                                ?>
+                                                    <div class='video_overlay'>
+                                                        <div class="ctaButton" onclick="do_playPauseVideo(this)">
+                                                            <div class="ctaButton_inner">
+                                                                <a><span></span> watch video</a>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="videoContainer">
-                                                    <video class='video' onclick="do_playPauseVideo(this)">
-                                                        <source src='<?php echo $sharer_carouselVideo; ?>'>
-                                                    </video>
-                                                </div>
+                                                    <div class="videoContainer">
+                                                        <video class='video' onclick="do_playPauseVideo(this)">
+                                                            <source src='<?php echo $sharer_carouselVideo; ?>'>
+                                                        </video>
+                                                    </div>
+                                                <?php
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
@@ -779,20 +784,25 @@ $learner_viewAllLink = get_sub_field("learner_viewAllLink");
                                         <div class="videoItem">
                                             <div class='video_container' playPause='play'>
                                                 <div class='video_thumbnail' style='background-image: url(<?php echo $learner_carouselVideoThumbnail; ?>);'></div>
-
-                                                <div class='video_overlay'>
-                                                    <div class="ctaButton" onclick="do_playPauseVideo(this)">
-                                                        <div class="ctaButton_inner">
-                                                            <a><span></span> watch video</a>
+                                                <?php
+                                                if ($learner_carouselVideo) {
+                                                ?>
+                                                    <div class='video_overlay'>
+                                                        <div class="ctaButton" onclick="do_playPauseVideo(this)">
+                                                            <div class="ctaButton_inner">
+                                                                <a><span></span> watch video</a>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="videoContainer">
-                                                    <video class='video' onclick="do_playPauseVideo(this)">
-                                                        <source src='<?php echo $learner_carouselVideo; ?>'>
-                                                    </video>
-                                                </div>
+                                                    <div class="videoContainer">
+                                                        <video class='video' onclick="do_playPauseVideo(this)">
+                                                            <source src='<?php echo $learner_carouselVideo; ?>'>
+                                                        </video>
+                                                    </div>
+                                                <?php
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
