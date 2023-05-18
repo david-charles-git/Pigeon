@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="PGN_Screen_Icon" transform="translate(-8959 21242)">
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="22" cy="22" r="22" transform="translate(8959 -21242)" fill="#ff7273"/>
+    <path id="Path_399" data-name="Path 399" d="M29.6,30.428a.874.874,0,0,0-.656-.234,178.669,178.669,0,0,1-28.014,0A.875.875,0,0,0,0,31.067V49.51a.875.875,0,0,0,.933.874,180.256,180.256,0,0,1,28.015,0,.876.876,0,0,0,.933-.874V31.067a.876.876,0,0,0-.277-.639Z" transform="translate(8966 -21260.289)" fill="#fff"/>
+    <g id="user_1_" data-name="user (1)" transform="translate(8941.727 -21227.016)">
+      <g id="Group_794" data-name="Group 794" transform="translate(34.309)">
+        <g id="Group_793" data-name="Group 793" transform="translate(0)">
+          <path id="Path_400" data-name="Path 400" d="M125.963,0a4.963,4.963,0,1,0,4.963,4.963A4.969,4.969,0,0,0,125.963,0Z" transform="translate(-121)" fill="#fd7273"/>
+        </g>
+      </g>
+      <g id="Group_796" data-name="Group 796" transform="translate(31 11.03)">
+        <g id="Group_795" data-name="Group 795" transform="translate(0)">
+          <path id="Path_401" data-name="Path 401" d="M45.448,302.14A7.076,7.076,0,0,0,40.375,300H38.169a7.076,7.076,0,0,0-5.073,2.14,7.234,7.234,0,0,0-2.1,5.1.552.552,0,0,0,.551.552H46.993a.552.552,0,0,0,.551-.552A7.234,7.234,0,0,0,45.448,302.14Z" transform="translate(-31 -300)" fill="#fd7273"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
